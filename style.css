@@ -1,0 +1,84 @@
+* {
+    font-family: Metamorphous, 'Ubunutu', sans-serif;
+    background-color: rgb(204, 197, 146);
+}
+
+.index {
+    text-align: center;
+}
+
+.odin {
+    height: auto;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 150px;
+}
+
+a > img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin-bottom: 20px;
+    display: block;
+    border: 2.5px outset black;
+}
+
+a > img:hover {
+    border: 2.5px inset rgb(165, 165, 194);
+    opacity: 0.8;
+}
+
+.box1,
+.box2,
+.box3 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.box1 {
+    grid-area: left;
+   
+}
+
+.box2 {
+    grid-area: middle;
+}
+
+.box3 {
+    grid-area: right;
+    
+}
+
+span {
+    font-size: 10px;
+}
+
+.recipe-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 125px;
+    border: 2.5pt groove black;
+}
+
+button {
+    border: 2px solid black;
+    background-color: rgb(138, 132, 84);
+}
+
+button:hover {
+    border: 1px inset rgb(165, 165, 194);
+    opacity: 0.5;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 'left left middle right right';
+    grid-gap: 10px;
+}
