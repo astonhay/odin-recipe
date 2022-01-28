@@ -1,6 +1,6 @@
 * {
     font-family: Metamorphous, 'Ubunutu', sans-serif;
-    background-color: rgb(204, 197, 146);
+    background-color: rgb(124, 119, 82);
 }
 
 .index {
@@ -10,11 +10,11 @@
 .odin {
     height: auto;
     width: 300px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
     border-radius: 150px;
+    grid-area: middle1;
 }
 
 a > img {
@@ -28,7 +28,7 @@ a > img {
 }
 
 a > img:hover {
-    border: 2.5px inset rgb(165, 165, 194);
+    border: 2.5px inset rgb(131, 205, 255);
     opacity: 0.8;
 }
 
@@ -47,7 +47,7 @@ a > img:hover {
 }
 
 .box2 {
-    grid-area: middle;
+    grid-area: middle2;
 }
 
 .box3 {
@@ -68,8 +68,10 @@ span {
 }
 
 button {
-    border: 2px solid black;
-    background-color: rgb(138, 132, 84);
+    border: 1px outset rgb(124, 119, 82);
+    background-color: rgb(124, 119, 82);
+    padding: 8px;
+    border-radius: 10%;
 }
 
 button:hover {
@@ -79,6 +81,8 @@ button:hover {
 
 .grid {
     display: grid;
-    grid-template-areas: 'left left middle right right';
+    grid-template-areas: 
+    'left left middle1 right right'
+    'left left middle2 right right';
     grid-gap: 10px;
 }
